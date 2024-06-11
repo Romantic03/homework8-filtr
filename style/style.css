@@ -1,0 +1,50 @@
+.box {
+	height: 500px;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+.list {
+	display: block;
+	max-width: 1056px;
+	height: 15px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.list li {
+	max-width: 150px;
+	display: block;
+	float: left;
+	position: relative;
+	border-right: 1px solid rgb(200, 200, 200);
+	border-bottom: 1px solid rgb(201, 201, 201);
+	transition: all 2s linear;
+}
+
+.list a {
+	width: 150px;
+	height: 15px;
+	background: #666;
+	display: block;
+}
+
+.list img {
+	position: absolute;
+	bottom: 50px;
+	transition: all 0.4s linear;
+	opacity: 0;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.3)));
+}
+
+.list li:hover img {
+	transform: translateY(35px);
+	opacity: 100;
+}
+
+.list a:hover {
+	background: white;
+}
